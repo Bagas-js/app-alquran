@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eaeaea;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 5px 6px;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
+
+.nm-surah {
+  margin: 5px 3px;
+  font-size: 1.3rem;
+}
+
+.english {
+  margin: 6px 0;
+  font-size: 1.1rem;
+}
+
+.urutanSurah {
+  margin-bottom: 7px;
+}
+
+.surah-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
+  margin-top: 6px;
+  width: 100vw;
+}
+
+.surah-detail h2,
+h3 {
+  text-align: center;
+}
+
+.line {
+  line-height: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.surah-detail a {
+  margin-bottom: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  width: 8%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.ayat {
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .surah-detail a {
+    width: 15%;
+  }
+  .ayat {
+    font-size: 1.4rem;
+  }
+}
